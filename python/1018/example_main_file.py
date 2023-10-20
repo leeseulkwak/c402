@@ -4,13 +4,11 @@ import example_read
 import example_wirte
 
 current_dir=os.getcwd()
-#경로를 구분 할 때 \\를 사용
+# dir_name="1018"
+# file_name="example.csv"
+# #경로를 구분 할 때 \\를 사용
 csv_file=current_dir+'\\1018\\example.csv'
 list=example_read.read_file(csv_file)
-
-print(list)
-
-
 
 # 합산
 sum=0
