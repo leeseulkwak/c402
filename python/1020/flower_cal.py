@@ -11,7 +11,7 @@ def dist_list(s, t):
         d=dist(i, t)
         d_list.append(d)
     return d_list
-
+    
 #작은 값부터 정렬
 def sort(lst):
     sorted_lst=sorted(enumerate(lst), key=lambda x:x[1])
@@ -24,8 +24,11 @@ if __name__=='__main__':
 
     trg=[5.4,3.2]
     
+
+
     dists=dist_list(src, trg)
     print(dists)
 
     top3=sort(dists)
     print(top3)
+
