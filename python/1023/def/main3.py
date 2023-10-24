@@ -13,7 +13,6 @@ if __name__=='__main__':
 
     if y == '+':
         a= x+z
-        type(a)
 
     elif  y =='-':
         b=x-z

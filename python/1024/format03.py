@@ -1,0 +1,8 @@
+output_f="{:+d}".format(52)
+print(output_f)
+output_g="{:-d}".format(-52)
+print(output_g)
+output_h="{: d}".format(52)
+print(output_h)
+output_i="{: d}".format(-52)
+print(output_i)
