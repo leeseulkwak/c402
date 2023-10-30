@@ -1,0 +1,1 @@
+variable_b= "b모듈의 변수"
