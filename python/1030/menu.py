@@ -22,9 +22,9 @@ while True:
             print("분식입니다.")
         elif choice=="9":
             break
-        else:
-            print("메뉴를다시선택")
-        # if choice not in ["1", "2", "3", "4", "9"]:
-        #     raise
+        # else:
+        #     print("메뉴를다시선택")
+        if choice not in ["1", "2", "3", "4", "9"]:
+            raise
     except:
         print("메뉴를 다시 선택해 주세요")

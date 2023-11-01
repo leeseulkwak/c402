@@ -6,7 +6,7 @@
 #     def drive(self):            # 메서드
 #         print(f"Driving a {self._brand} {self._model}")
 
-class MyClass:
+class MyClass: 
     class_var = "I'm a class variable"
 
     def __init__(self, value):
