@@ -1,2 +1,32 @@
-<!-- 질문 목록 -->
-question list
+{% extends "base.html" %}
+{% block content %}
+<div>
+{% if question_list %}
+    <ul>
+    {% for question in question_list %}
+        <li><a href="{{ url_for('question.detail', question_id=question.id) }}">{{ question.subject }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>질문이 없습니다.</p>
+{% endif %} 
+</div>
+{% endblock %}
+
+
+
+
+
+<!-- {% if question_list %}
+목록이 있습니다.
+<div>
+    {% for question in question_list %}
+        <li>{{question.id}}</li>
+        {{question.subject}}
+        {{question.content}}
+        {{question.create_date}}
+    {% endfor %}
+</div>    
+{% else %}
+목록이 없습니다.
+{% endif %} -->
