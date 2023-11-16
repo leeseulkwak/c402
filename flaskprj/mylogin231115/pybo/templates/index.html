@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>홈</h1>
+{% if g.user %}
+<ul>
+    <li>{{ g.user.username }}님 환영합니다.</li>
+    <li>이메일: {{ g.user.email }}</li>
+</ul>
+{% else %}
+회원가입
+{% endif %}
+{% endblock %}

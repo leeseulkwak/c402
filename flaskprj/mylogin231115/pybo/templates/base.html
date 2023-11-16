@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+        <!--요청되는 메타 태그-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--부트스트랩 CSS-->
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+
+        <!--pybo CSS-->
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <title>HELLO, PYBO</title>
+</head>
+<body>
+
+<!-- 네비게이션바 -->
+{% include "navbar.html" %}
+<!--기본 템플릿 안에 삽입될 내용 START-->
+{%block content %}
+{%endblock %}
+<!--기본 템플릿 안에 삽입될 내용 END-->
+<script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+</body>
+</html>
